@@ -18,4 +18,9 @@ export class UserService {
   getUsuarios(): Observable<any> {
     return this.http.get<Users>(this.url  + '/' + 'users' )
   }
+
+  getPostsIdUser(id: number): Observable<any> {
+    return this.http.get<any>(this.url + '/' + 'users' + '/' + id + '/' +'posts')
+  }
 }
+//https://jsonplaceholder.typicode.com/users/1/posts

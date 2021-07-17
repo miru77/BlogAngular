@@ -12,6 +12,7 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { MessageConfirmComponent } from './layout/message-confirm/message-confirm.component';
 import { AngularMaterialModule } from './layout/angular-material/angular-material.module';
 import { UsersComponent } from './users/users.component';
+import { PostsComponent } from './posts/posts.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { UsersComponent } from './users/users.component';
     NavbarComponent,
     FooterComponent,
     MessageConfirmComponent,
-    UsersComponent
+    UsersComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
