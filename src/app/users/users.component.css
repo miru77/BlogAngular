@@ -1,0 +1,13 @@
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 70%;
+  margin: 30px;
+  margin-bottom: 10px;
+}
+.mat-raised-button {
+  background-color: rgba(232, 195, 158, 0.9);
+}
