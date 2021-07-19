@@ -14,6 +14,8 @@ import { AngularMaterialModule } from './layout/angular-material/angular-materia
 import { UsersComponent } from './users/users.component';
 import { PostsComponent } from './posts/posts.component';
 import { CardComponent } from './posts/card/card.component';
+import { FilterPipe } from './pipes/filter.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { CardComponent } from './posts/card/card.component';
     MessageConfirmComponent,
     UsersComponent,
     PostsComponent,
-    CardComponent
+    CardComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
@@ -32,6 +35,7 @@ import { CardComponent } from './posts/card/card.component';
     BrowserAnimationsModule,
     AngularMaterialModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

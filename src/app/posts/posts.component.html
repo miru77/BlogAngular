@@ -4,11 +4,16 @@
 
 
 
+<mat-form-field  color="warn">
+    <mat-label color="warn">Filtro</mat-label>
+    <input matInput  placeholder="Filtro" autocomplete="off" name="filterPost" [(ngModel)]="filterPost">
+  </mat-form-field>
+
 <div class="content">
 
     <div fxLayout="row wrap" fxLayoutGap="15px grid">
      
-            <div fxFlex="25%"  fxFlex.xs="100%"   fxFlex.sm="33%" *ngFor="let post of posts">
+            <div fxFlex="25%"  fxFlex.xs="100%"   fxFlex.sm="33%" *ngFor="let post of posts | filter:filterPost">
 
                 <app-card [post]="post"></app-card>
     

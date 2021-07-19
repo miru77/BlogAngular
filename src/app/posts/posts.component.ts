@@ -13,6 +13,7 @@ export class PostsComponent implements OnInit {
   idUser: number;
   posts:any[] = [];
   loading = true;
+  filterPost = '';
 
 
 
@@ -41,5 +42,7 @@ export class PostsComponent implements OnInit {
 
     })
   }
+
+  
 
 }
