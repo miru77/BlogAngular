@@ -13,6 +13,7 @@ import { MessageConfirmComponent } from './layout/message-confirm/message-confir
 import { AngularMaterialModule } from './layout/angular-material/angular-material.module';
 import { UsersComponent } from './users/users.component';
 import { PostsComponent } from './posts/posts.component';
+import { CardComponent } from './posts/card/card.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PostsComponent } from './posts/posts.component';
     FooterComponent,
     MessageConfirmComponent,
     UsersComponent,
-    PostsComponent
+    PostsComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

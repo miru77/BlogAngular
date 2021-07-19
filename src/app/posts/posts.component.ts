@@ -11,10 +11,8 @@ import { UserService } from '../services/user.service';
 export class PostsComponent implements OnInit {
 
   idUser: number;
-  idPost: number | undefined;
-  title : string | undefined;
-  body : string | undefined;
-
+  posts:any[] = [];
+  loading = true;
 
 
 
@@ -31,7 +29,10 @@ export class PostsComponent implements OnInit {
   getPostIdUsuario(id :number):void {
     console.log(id)
     this.userService.getPostsIdUser(id).subscribe(data =>{
-      console.log(data)
+    
+      this.posts = data;
+      this.loading = false;
+      console.log( this.posts)
      
 
     //  this.idPost = data.id;
