@@ -1,1 +1,24 @@
-<p>posts-todos works!</p>
+
+
+<mat-form-field  color="warn">
+    <mat-label color="warn">Buscar Posts</mat-label>
+    <input matInput  placeholder="Filtro" autocomplete="off" name="filterPost" [(ngModel)]="filterPost">
+  </mat-form-field>
+
+<div class="content">
+
+    <div fxLayout="row wrap" fxLayoutGap="15px grid">
+     
+            <div fxFlex="25%"  fxFlex.xs="100%"   fxFlex.sm="33%" *ngFor="let post of posts | filter:filterPost">
+
+                <app-card [post]="post"></app-card>
+    
+            </div>
+
+    </div>
+      
+        
+</div>
+
+      
+

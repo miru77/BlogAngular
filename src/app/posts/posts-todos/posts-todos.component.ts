@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-posts-todos',
@@ -7,9 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostsTodosComponent implements OnInit {
 
-  constructor() { }
+  posts:any[] = [];
+  filterPost = '';
+
+
+  constructor(private userService: UserService) { }
 
   ngOnInit(): void {
+    this.cargarUsuarios()
+  }
+
+  cargarUsuarios(): void {
+    this.userService.getPosts().subscribe(data => {
+    
+    this.posts = data;
+
+    console.log(this.posts)
+
+    })
   }
 
 }
