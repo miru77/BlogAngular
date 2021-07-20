@@ -49,7 +49,6 @@ export class UsersComponent implements AfterViewInit, OnInit {
     this.listUsuarios = data;
     this.dataSource = new MatTableDataSource(data);
 
-    console.log(this.listUsuarios)
 
     })
   }

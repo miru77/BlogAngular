@@ -28,17 +28,12 @@ export class PostsComponent implements OnInit {
   }
 
   getPostIdUsuario(id :number):void {
-    console.log(id)
+    
     this.userService.getPostsIdUser(id).subscribe(data =>{
     
       this.posts = data;
       this.loading = false;
       console.log( this.posts)
-     
-
-    //  this.idPost = data.id;
-      //this.title =  data.title;
-      //this.body = data.body;
 
     })
   }

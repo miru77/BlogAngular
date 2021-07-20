@@ -1,0 +1,20 @@
+
+<mat-card class="example-card">
+    <mat-card-header>
+    
+      <mat-card-title>Album N°<strong>{{idAlbum}}</strong></mat-card-title>
+     
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+      {{title}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions class="btnCenter">
+      <button  mat-raised-button  (click)="openDialog()">Usuario</button>
+      <button mat-raised-button [routerLink]="['/albums',idAlbum,'photos']" >Galleria</button>
+    </mat-card-actions>
+  </mat-card>
+
+
+

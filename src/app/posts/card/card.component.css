@@ -4,11 +4,6 @@
   margin-left: 20px;
 }
 
-.example-header-image {
-  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
-  background-size: cover;
-}
-
 .mat-raised-button {
   background-color: rgba(232, 195, 158, 0.9);
 }

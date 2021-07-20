@@ -19,6 +19,12 @@ import { FormsModule } from '@angular/forms';
 import { UserComponent } from './users/user/user.component';
 import { CommentsComponent } from './posts/comments/comments.component';
 import { PostsTodosComponent } from './posts/posts-todos/posts-todos.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { AlbumsComponent } from './albums/albums.component';
+import { CardsAlbumsComponent } from './albums/cards-albums/cards-albums.component';
+import { AlbumsTodosComponent } from './albums/albums-todos/albums-todos.component';
+import { PhotosComponent } from './albums/photos/photos.component';
+import { PhotoComponent } from './albums/photos/photo/photo.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +39,12 @@ import { PostsTodosComponent } from './posts/posts-todos/posts-todos.component';
     FilterPipe,
     UserComponent,
     CommentsComponent,
-    PostsTodosComponent
+    PostsTodosComponent,
+    AlbumsComponent,
+    CardsAlbumsComponent,
+    AlbumsTodosComponent,
+    PhotosComponent,
+    PhotoComponent
   ],
   imports: [
     BrowserModule,
@@ -42,6 +53,7 @@ import { PostsTodosComponent } from './posts/posts-todos/posts-todos.component';
     AngularMaterialModule,
     HttpClientModule,
     FormsModule,
+    Ng2SearchPipeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

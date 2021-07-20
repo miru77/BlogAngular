@@ -23,7 +23,7 @@ export class PostsTodosComponent implements OnInit {
     
     this.posts = data;
 
-    console.log(this.posts)
+
 
     })
   }

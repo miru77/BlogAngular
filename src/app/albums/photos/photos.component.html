@@ -1,0 +1,20 @@
+<div class="content">
+
+    <div fxLayout="row wrap" fxLayoutGap="15px grid">
+     
+            <div fxFlex="20%"  fxFlex.xs="50%"   fxFlex.sm="33%" *ngFor="let photo of photos">
+
+         
+    
+
+            <a [routerLink]="['/photos',photo.id]">
+
+             <img src="{{photo.thumbnailUrl}}" alt="image">
+            </a> 
+
+            </div>
+
+    </div>
+      
+        
+</div>

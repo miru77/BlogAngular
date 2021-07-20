@@ -55,7 +55,7 @@ export class CommentsComponent implements AfterViewInit,  OnInit {
       this.comments = data;
       this.dataSource = new MatTableDataSource(data);
       //this.loading = false;
-      console.log( this.comments)
+    
      
 
 

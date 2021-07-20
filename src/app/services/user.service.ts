@@ -34,4 +34,20 @@ export class UserService {
   getPostsIdComments(id: number): Observable<any> {
     return this.http.get<any>(this.url + '/' + 'posts' + '/' + id + '/' +'comments')
   }
+
+  getAlbumsIdUsers(id: number): Observable<any> {
+    return this.http.get<any>(this.url + '/' + 'users' + '/' + id + '/' +'albums')
+  }
+  getAlbums(): Observable<any> {
+    return this.http.get<any>(this.url  + '/' + 'albums' )
+  }
+
+  getPhotosIdAlbum(id: number): Observable<any> {
+    return this.http.get<any>(this.url + '/' + 'albums' + '/' + id + '/' +'photos')
+  }
+
+  getIdPhotos(id: number): Observable<any> {
+    return this.http.get<any>(this.url + '/' + 'photos' + '/' + id)
+  }
+  
 }

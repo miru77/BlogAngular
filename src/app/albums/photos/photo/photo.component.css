@@ -1,0 +1,12 @@
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url("https://illustoon.com/photo/2552.png");
+  background-size: cover;
+}
+
+.mat-raised-button {
+  background-color: rgba(232, 195, 158, 0.9);
+}
