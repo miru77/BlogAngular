@@ -18,6 +18,7 @@ import { FilterPipe } from './pipes/filter.pipe';
 import { FormsModule } from '@angular/forms';
 import { UserComponent } from './users/user/user.component';
 import { CommentsComponent } from './posts/comments/comments.component';
+import { PostsTodosComponent } from './posts/posts-todos/posts-todos.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { CommentsComponent } from './posts/comments/comments.component';
     CardComponent,
     FilterPipe,
     UserComponent,
-    CommentsComponent
+    CommentsComponent,
+    PostsTodosComponent
   ],
   imports: [
     BrowserModule,

@@ -7,8 +7,6 @@ import { Users } from '../models/usuario';
 
 
 
-
-
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',

@@ -26,4 +26,8 @@ export class UserService {
   getIdUser(id: number): Observable<any> {
     return this.http.get<any>(this.url + '/' + 'users' + '/' + id)
   }
+
+  getPostsIdComments(id: number): Observable<any> {
+    return this.http.get<any>(this.url + '/' + 'posts' + '/' + id + '/' +'comments')
+  }
 }
