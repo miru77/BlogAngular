@@ -1,0 +1,25 @@
+<div class="content">
+<h1 mat-dialog-title>Usuario: {{user.name}}</h1>
+<div mat-dialog-content>
+    
+    <p>Sitio Web: <strong>{{user.website}}</strong></p>
+   
+   Datos de la Empresa:
+    <ul>
+      <li>
+        <p>Nombre: <strong>{{user.company.name}}</strong></p>
+      </li>
+      <li>
+        <p>Frases Claves: <strong> {{user.company.catchPhrase}}</strong></p>
+      </li>
+      <li>
+        <p>BS: <strong>{{user.company.bs}}</strong></p>
+      </li>
+    </ul>
+
+</div>
+<div mat-dialog-actions>
+  <button  mat-raised-button mat-dialog-close>Cerrar</button>
+</div>
+
+</div>

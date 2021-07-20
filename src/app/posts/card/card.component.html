@@ -12,10 +12,11 @@
           </p>
         </mat-card-content>
         <mat-card-actions class="btnCenter">
-          <button  mat-raised-button>Usuario</button>
-          <button mat-raised-button>Cometarios</button>
+          <button  mat-raised-button (click)="openDialog()">Usuario</button>
+          <button mat-raised-button  [routerLink]="['/posts',idPost,'comments']" >Cometarios</button>
         </mat-card-actions>
       </mat-card>
 
 
+  
   

@@ -1,0 +1,7 @@
+.content {
+  padding: 0;
+  margin: 0;
+}
+.mat-raised-button {
+  background-color: rgba(232, 195, 158, 0.9);
+}

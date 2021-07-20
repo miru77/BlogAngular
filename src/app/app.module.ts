@@ -16,6 +16,8 @@ import { PostsComponent } from './posts/posts.component';
 import { CardComponent } from './posts/card/card.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { FormsModule } from '@angular/forms';
+import { UserComponent } from './users/user/user.component';
+import { CommentsComponent } from './posts/comments/comments.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { FormsModule } from '@angular/forms';
     UsersComponent,
     PostsComponent,
     CardComponent,
-    FilterPipe
+    FilterPipe,
+    UserComponent,
+    CommentsComponent
   ],
   imports: [
     BrowserModule,

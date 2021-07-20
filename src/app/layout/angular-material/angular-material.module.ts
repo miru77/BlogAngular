@@ -13,6 +13,8 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import {MatDialogModule} from '@angular/material/dialog';
+
 
 
 
@@ -33,6 +35,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     MatCardModule,
     MatGridListModule,
     FlexLayoutModule,
+    MatDialogModule,
   ],
   exports: [
     MatToolbarModule,
@@ -47,8 +50,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     MatCardModule,
     MatGridListModule,
     FlexLayoutModule,
-
-
+    MatDialogModule,
 
   ]
 })
