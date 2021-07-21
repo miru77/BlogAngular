@@ -33,7 +33,7 @@ export class PostsComponent implements OnInit {
     
       this.posts = data;
       this.loading = false;
-      console.log( this.posts)
+     
 
     })
   }

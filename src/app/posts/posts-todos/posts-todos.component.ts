@@ -10,6 +10,7 @@ export class PostsTodosComponent implements OnInit {
 
   posts:any[] = [];
   filterPost = '';
+  loading = true;
 
 
   constructor(private userService: UserService) { }
@@ -22,7 +23,7 @@ export class PostsTodosComponent implements OnInit {
     this.userService.getPosts().subscribe(data => {
     
     this.posts = data;
-
+    this.loading = false;
 
 
     })
