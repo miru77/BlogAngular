@@ -12,3 +12,7 @@
 .mat-card-actions {
   margin: 0 auto;
 }
+.example-header-image {
+  background-image: url("https://illustoon.com/photo/2552.png");
+  background-size: cover;
+}
