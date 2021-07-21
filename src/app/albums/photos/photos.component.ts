@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../../services/user.service';
 import { ActivatedRoute } from '@angular/router';
+import {MatSnackBar} from '@angular/material/snack-bar';
+
  
 
 @Component({
@@ -15,7 +17,9 @@ export class PhotosComponent implements OnInit {
   loading = true;
 
 
-  constructor( private aRoute: ActivatedRoute, private userService: UserService) {
+  constructor( private aRoute: ActivatedRoute, 
+    private userService: UserService, public snackBar: MatSnackBar) 
+    {
     const param =this.aRoute.snapshot.paramMap.get('id');
     this.idAlbum = param?+param:0;
    }
@@ -34,7 +38,14 @@ export class PhotosComponent implements OnInit {
     })
   }
 
- 
+  borrarFhoto(id :number)  {
+
+    this.photos = this.photos.filter(photo => photo.id !==id );
+    this.snackBar.open('La imagen fue elimada con exito!','', {
+      duration: 3000
+    })
+      
+  }
 
 
 }

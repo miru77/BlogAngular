@@ -18,6 +18,9 @@ const routes: Routes = [
   {path: 'posts/:id/comments', component: CommentsComponent},
   {path: 'users/:id/albums', component: AlbumsComponent},
   {path: 'albums/:id/photos', component: PhotosComponent},
+  {path: '', redirectTo:'users', pathMatch: 'full'},
+  {path: '**', redirectTo:'users', pathMatch: 'full'},
+
 
 ];
 

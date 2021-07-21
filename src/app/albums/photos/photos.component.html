@@ -4,13 +4,28 @@
      
             <div fxFlex="20%"  fxFlex.xs="50%"   fxFlex.sm="33%" *ngFor="let photo of photos">
 
-         
-    
+         <div class="grupo" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+              
 
-            <a [routerLink]="['/photos',photo.id]">
+                <div class="acctionButton" style="align-self: flex-end; margin-right: 37px;">
+                    
+                    <button mat-mini-fab  color="warn"  
+                    (click)="borrarFhoto(photo.id)"
+                    aria-label="Example icon button with a delete icon">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                </div>
+            
+                <div class="imagen" style="margin-top: -38px;">
+                    <a [routerLink]="['/photos',photo.id]">
+                        <img src="{{photo.thumbnailUrl}}" alt="image" >
+                       </a> 
+                </div>
 
-             <img src="{{photo.thumbnailUrl}}" alt="image">
-            </a> 
+               
+
+          
+            </div>
 
             </div>
 

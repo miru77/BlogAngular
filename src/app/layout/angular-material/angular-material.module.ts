@@ -14,6 +14,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
 
 
 
@@ -36,6 +38,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatGridListModule,
     FlexLayoutModule,
     MatDialogModule,
+    MatSnackBarModule,
   ],
   exports: [
     MatToolbarModule,
@@ -51,6 +54,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatGridListModule,
     FlexLayoutModule,
     MatDialogModule,
+    MatSnackBarModule,
+
 
   ]
 })
