@@ -1,10 +1,21 @@
 
-<mat-toolbar color="warn" class="mat-elevation-z6" >
-   <span><mat-icon>eco</mat-icon> MI BLOG</span>
+<mat-toolbar color="warn" class="mat-elevation-z6" fxHide.xs>
+  
+      <span><mat-icon>eco</mat-icon> MI BLOG</span>
+      <div class="spacer" >   </div>
+         <a mat-button [routerLink] ="'/users'">Usuarios</a>
+         <a mat-button [routerLink] ="'/posts'">Posteos</a>
+         <a mat-button  [routerLink] ="'/albums'">Albumes</a> 
+       
+     </mat-toolbar>
 
-   <div class="spacer"> </div>
-      <a mat-button [routerLink] ="'/users'">Usuarios</a>
-      <a mat-button [routerLink] ="'/posts'">Posteos</a>
-      <a mat-button  [routerLink] ="'/albums'">Albumes</a>
-
-  </mat-toolbar>
+     <mat-toolbar   fxHide.gt-xs>
+         <div >
+         
+               <a mat-button [routerLink] ="'/users'">Usuarios</a>
+               <a mat-button [routerLink] ="'/posts'">Posteos</a>
+               <a mat-button  [routerLink] ="'/albums'">Albumes</a>
+      
+      
+            </div>
+        </mat-toolbar>

@@ -3,4 +3,18 @@
 }
 .mat-toolbar {
   width: 100%;
+  background: #f44336;
+}
+a {
+  color: white;
+}
+
+@media (max-width: 468px) {
+  .mat-toolbar {
+    width: 100%;
+    background: none;
+  }
+  a {
+    color: #f44336;
+  }
 }

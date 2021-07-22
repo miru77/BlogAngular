@@ -9,3 +9,13 @@
   font-size: 0.9rem;
   margin: 0 auto;
 }
+
+@media (max-width: 468px) {
+  .mat-toolbar {
+    width: 100%;
+    background: none;
+  }
+  span {
+    color: #f44336;
+  }
+}

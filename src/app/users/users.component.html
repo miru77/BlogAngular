@@ -36,7 +36,8 @@
         <th mat-header-cell *matHeaderCellDef> Acciones </th>
         <td mat-cell *matCellDef="let element"> 
           <a mat-raised-button  [routerLink]="['/users',element.id,'posts']" >Posteos</a>
-          <a  mat-raised-button  [routerLink]="['/users',element.id,'albums']">Albumes</a>  
+          <a  mat-raised-button  [routerLink]="['/users',element.id,'albums']">Albumes</a> 
+          <a  mat-raised-button  [routerLink]="['/users',element.id,'albums']">Todos</a>  
      
 
         </td>
