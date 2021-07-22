@@ -49,5 +49,10 @@ export class UserService {
   getIdPhotos(id: number): Observable<any> {
     return this.http.get<any>(this.url + '/' + 'photos' + '/' + id)
   }
+
+  getTodosIdUser(id: number): Observable<any> {
+    return this.http.get<any>(this.url + '/' + 'users' + '/' + id + '/' +'todos')
+  }
+ 
   
 }

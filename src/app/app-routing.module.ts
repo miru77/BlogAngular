@@ -8,6 +8,7 @@ import { AlbumsComponent } from './albums/albums.component';
 import { AlbumsTodosComponent } from './albums/albums-todos/albums-todos.component';
 import { PhotosComponent } from './albums/photos/photos.component';
 import { PhotoComponent } from './albums/photos/photo/photo.component';
+import { TodosComponent } from './users/todos/todos.component';
 
 const routes: Routes = [
   {path: 'users', component: UsersComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'posts/:id/comments', component: CommentsComponent},
   {path: 'users/:id/albums', component: AlbumsComponent},
   {path: 'albums/:id/photos', component: PhotosComponent},
+  {path: 'users/:id/todos', component: TodosComponent},
   {path: '', redirectTo:'users', pathMatch: 'full'},
   {path: '**', redirectTo:'users', pathMatch: 'full'},
 

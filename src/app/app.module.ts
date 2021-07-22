@@ -25,6 +25,8 @@ import { CardsAlbumsComponent } from './albums/cards-albums/cards-albums.compone
 import { AlbumsTodosComponent } from './albums/albums-todos/albums-todos.component';
 import { PhotosComponent } from './albums/photos/photos.component';
 import { PhotoComponent } from './albums/photos/photo/photo.component';
+import { TodosComponent } from './users/todos/todos.component';
+import { CardTodoComponent } from './users/todos/card-todo/card-todo.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { PhotoComponent } from './albums/photos/photo/photo.component';
     CardsAlbumsComponent,
     AlbumsTodosComponent,
     PhotosComponent,
-    PhotoComponent
+    PhotoComponent,
+    TodosComponent,
+    CardTodoComponent
   ],
   imports: [
     BrowserModule,

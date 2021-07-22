@@ -1,0 +1,25 @@
+<div  *ngIf="loading"> 
+    <mat-spinner color="warn" style="margin:0 auto;"></mat-spinner>
+</div>
+
+
+
+<mat-form-field  color="warn">
+    <mat-label color="warn">Buscar Todos</mat-label>
+    <input matInput  placeholder="Filtrar" autocomplete="off" name="filterAlbums" [(ngModel)]="filterAlbums">
+  </mat-form-field>
+
+<div class="content">
+
+    <div fxLayout="row wrap" fxLayoutGap="15px grid">
+     
+            <div fxFlex="25%"  fxFlex.xs="100%"   fxFlex.sm="33%" *ngFor="let todo of todos | filter:filterAlbums">
+
+                <app-card-todo [todo]="todo"></app-card-todo>
+    
+            </div>
+
+    </div>
+      
+        
+</div>
