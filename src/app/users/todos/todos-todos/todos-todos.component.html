@@ -9,6 +9,11 @@
     <input matInput  placeholder="Filtrar" autocomplete="off" name="filterAlbums" [(ngModel)]="filterAlbums">
   </mat-form-field>
 
+  <button mat-stroked-button color="basic"  (click)="filtroEstadoCompleto()" >Completo</button>
+  <button mat-stroked-button color="warn"  (click)="filtroEstadoInCompleto()" >Incompleto</button>
+  <button mat-stroked-button color="basic"  (click)="filtroTodos()" >Todos</button>
+
+
 <div class="content">
 
     <div fxLayout="row wrap" fxLayoutGap="15px grid">

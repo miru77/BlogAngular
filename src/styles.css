@@ -24,3 +24,13 @@ simple-snack-bar span {
 .mat-raised-button:hover {
   font-weight: bold;
 }
+
+.mat-stroked-button {
+  margin-left: 0;
+}
+
+@media (max-width: 600px) {
+  .mat-stroked-button {
+    margin-left: 25px;
+  }
+}

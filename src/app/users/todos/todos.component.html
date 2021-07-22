@@ -2,12 +2,20 @@
     <mat-spinner color="warn" style="margin:0 auto;"></mat-spinner>
 </div>
 
-
+ 
 
 <mat-form-field  color="warn">
     <mat-label color="warn">Buscar Todos</mat-label>
     <input matInput  placeholder="Filtrar" autocomplete="off" name="filterAlbums" [(ngModel)]="filterAlbums">
   </mat-form-field>
+
+  
+  <button mat-stroked-button color="basic"  (click)="filtroEstadoCompleto()" >Completo</button>
+  <button mat-stroked-button color="warn"  (click)="filtroEstadoInCompleto()" >Incompleto</button>
+  <button mat-stroked-button color="basic"  (click)="filtroTodos()" >Todos</button>
+
+
+
 
 <div class="content">
 

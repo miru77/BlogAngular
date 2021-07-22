@@ -34,5 +34,23 @@ export class TodosComponent implements OnInit {
 
     })
   }
+  filtroEstadoCompleto() {
+   
+    this.todos = this.todos.filter(todo => todo.completed === true);
+      this.loading = false;
+
+    }
+    filtroEstadoInCompleto() {
+   
+      this.todos = this.todos.filter(todo => todo.completed === false);
+        this.loading = false;
+  
+      }
+
+      filtroTodos() {
+   
+        this.getTodosIdUsuario(this.idUser)
+    
+        }
 
 }
