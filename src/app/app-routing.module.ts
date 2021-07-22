@@ -9,11 +9,13 @@ import { AlbumsTodosComponent } from './albums/albums-todos/albums-todos.compone
 import { PhotosComponent } from './albums/photos/photos.component';
 import { PhotoComponent } from './albums/photos/photo/photo.component';
 import { TodosComponent } from './users/todos/todos.component';
+import { TodosTodosComponent } from './users/todos/todos-todos/todos-todos.component';
 
 const routes: Routes = [
   {path: 'users', component: UsersComponent},
   {path: 'posts', component: PostsTodosComponent},
   {path: 'albums', component: AlbumsTodosComponent},
+  {path: 'todos', component: TodosTodosComponent},
   {path: 'photos/:id', component: PhotoComponent},
   {path: 'users/:id/posts', component: PostsComponent},
   {path: 'posts/:id/comments', component: CommentsComponent},
@@ -32,4 +34,3 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-PhotoComponent

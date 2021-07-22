@@ -54,5 +54,8 @@ export class UserService {
     return this.http.get<any>(this.url + '/' + 'users' + '/' + id + '/' +'todos')
   }
  
+  getTodos(): Observable<any> {
+    return this.http.get<any>(this.url  + '/' + 'todos' )
+  }
   
 }

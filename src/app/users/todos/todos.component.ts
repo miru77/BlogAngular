@@ -30,7 +30,7 @@ export class TodosComponent implements OnInit {
     this.userService.getTodosIdUser(id).subscribe(data =>{
       this.todos = data;
       this.loading = false;
-      console.log(  this.todos)
+      
 
     })
   }

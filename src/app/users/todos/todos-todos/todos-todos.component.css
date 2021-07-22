@@ -1,0 +1,11 @@
+.content {
+  padding: 16px;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 70%;
+  margin: 30px;
+  margin-left: 60px;
+  margin-bottom: 10px;
+}

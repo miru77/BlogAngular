@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import {MatSnackBar} from '@angular/material/snack-bar';
+
 
 @Component({
   selector: 'app-card-todo',
@@ -14,7 +16,7 @@ export class CardTodoComponent implements OnInit {
   completed: boolean | undefined;
   favoriteSeason: string | undefined;
 
-  constructor() { }
+  constructor(public snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
 
@@ -25,6 +27,10 @@ export class CardTodoComponent implements OnInit {
 
   cambiarEstadoCompletdo() {
     this.completed = ! this.completed ;
+    this.snackBar.open('El estado fue cambiado con exito!','', {
+      duration: 3000
+    })
+
   }
 
 }
